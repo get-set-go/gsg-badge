@@ -1,4 +1,4 @@
-import '../node_modules/gsg-common-style/less/index.less';
+import '../node_modules/gsg-common-style/less/badge/index.less';
 
 import React, { PropTypes } from 'react';
 import ReactDOM from 'react-dom';
