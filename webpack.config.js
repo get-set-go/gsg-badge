@@ -17,28 +17,11 @@ var config = {
     libraryTarget: 'umd'
   },
 
-  externals: [{
-    'react': {
-      root: 'React',
-      commonjs2: 'react',
-      commonjs: 'react',
-      amd: 'react'
-    }
-  }, {
-    'react-dom': {
-      root: 'ReactDOM',
-      commonjs2: 'react-dom',
-      commonjs: 'react-dom',
-      amd: 'react-dom'
-    }
-  }, {
-    'classnames': {
-      root: 'classNames',
-      commonjs2: 'classnames',
-      commonjs: 'classnames',
-      amd: 'classnames'
-    }
-  }],
+  externals: {
+    'react': 'react',
+    'react-dom': 'react-dom',
+    'classnames': 'classnames'
+  },
 
   module: {
     loaders: [{
