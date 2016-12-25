@@ -27,9 +27,10 @@ var config = {
     loaders: [{
       test: /\.(js|jsx)?$/,
       exclude: /node_modules/,
-      loader: 'babel',
+      loader: 'babel-loader',
       query: {
-        presets: ['es2015', 'react', 'stage-0', 'stage-1']
+        presets: ['es2015', 'react', 'stage-0', 'stage-1'],
+        plugins: ['transform-runtime']
       }
     }, {
       test: /\.css$/,

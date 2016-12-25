@@ -1,6 +1,6 @@
 {
   "name": "gsg-badge",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Get-Set-Go badge component",
   "main": "dist/index.min.js",
   "scripts": {
@@ -36,11 +36,12 @@
   },
   "homepage": "https://github.com/get-set-go/gsg-badge#readme",
   "dependencies": {
+    "babel-runtime": "^6.20.0",
     "classnames": "^2.2.5",
+    "gsg-common-style": "https://github.com/get-set-go/gsg-common-style.git",
     "object-assign": "^4.1.0",
     "react": "^15.4.1",
-    "react-dom": "^15.4.1",
-    "gsg-common-style": "https://github.com/get-set-go/gsg-common-style.git"
+    "react-dom": "^15.4.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",
@@ -49,6 +50,7 @@
     "babel-eslint": "^7.1.1",
     "babel-jest": "^17.0.2",
     "babel-loader": "^6.2.8",
+    "babel-plugin-transform-runtime": "^6.15.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
