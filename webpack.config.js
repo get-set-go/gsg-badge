@@ -18,9 +18,7 @@ var config = {
   },
 
   externals: {
-    'react': 'react',
-    'react-dom': 'react-dom',
-    'classnames': 'classnames'
+    'react': 'react'
   },
 
   module: {
