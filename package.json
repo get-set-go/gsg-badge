@@ -1,6 +1,6 @@
 {
   "name": "gsg-badge",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Get-Set-Go badge component",
   "main": "dist/index.min.js",
   "scripts": {
@@ -15,8 +15,7 @@
     "build:prod": "npm run build && npm run build:eg",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
-    "test": "npm run test:clean && npm run coverage:clean && jest",
-    "postinstall": "npm run build:prod"
+    "test": "npm run test:clean && npm run coverage:clean && jest"
   },
   "repository": {
     "type": "git",
