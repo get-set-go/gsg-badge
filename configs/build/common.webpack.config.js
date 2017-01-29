@@ -12,10 +12,7 @@ const commonWebpackConfig = {
 	/**
 	 * Entry point file for bundling the application
 	 */
-	entry: [
-		'babel-polyfill',
-		`${settings.gateway.client}${settings.gateway.entry}`
-	],
+	entry: `${settings.gateway.client}${settings.gateway.entry}`,
 
 	module: {
 		loaders: [

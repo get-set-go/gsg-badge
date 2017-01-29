@@ -1,6 +1,6 @@
 {
   "name": "gsg-badge",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Get-Set-Go badge component",
   "main": "dist/index.min.js",
   "scripts": {
