@@ -4,17 +4,17 @@
   "description": "Get-Set-Go badge component",
   "main": "dist/index.min.js",
   "scripts": {
-    "serve:dev": "webpack-dev-server --config \"./configs/build/dev.webpack.config.js\" --content-base src/ --progress -d --watch",
-    "serve:dev:hot": "yarn run serve:dev -- --inline --hot",
-    "serve:prod": "webpack-dev-server --config \"./configs/build/prod.webpack.config.js\" --content-base src/ --progress",
-    "clean:dist": "rimraf dist",
-    "clean:coverage": "rimraf coverage",
-    "bundle:watch": "yarn run clean:dist && webpack --config \"./configs/build/dev.webpack.config.js\" --progress -d --watch",
-    "bundle:dev": "yarn run clean:dist && webpack --config \"./configs/build/dev.webpack.config.js\" --progress -p -d",
-    "build": "yarn run clean:dist && yarn run lint && yarn run test && webpack --config \"./configs/build/prod.webpack.config.js\" --progress -p",
+    "start:dev": "webpack-dev-server --config \"./configs/build/dev.webpack.config.js\" --content-base src/ --progress -d --watch",
+    "start:dev:hot": "yarn run serve:dev -- --inline --hot",
+    "start:prod": "webpack-dev-server --config \"./configs/build/prod.webpack.config.js\" --content-base src/ --progress",
+    "bundle": "yarn run clean:dist && webpack --config \"./configs/build/dev.webpack.config.js\" --progress -p -d",
+    "build": "yarn run clean:dist && yarn run lint && webpack --config \"./configs/build/prod.webpack.config.js\" --progress -p",
     "test": "yarn run clean:coverage && jest --bail --verbose --coverage",
     "lint": "eslint configs src",
-    "lint:fix": "eslint --fix configs src"
+    "lint:fix": "eslint --fix configs src",
+    "deploy": "git subtree push --prefix dist origin gh-pages",
+    "clean:dist": "rimraf dist",
+    "clean:coverage": "rimraf coverage"
   },
   "repository": {
     "type": "git",
